@@ -12,8 +12,5 @@ insert_final_newline = false
 indent_size = 4
 
 # Tabs
-[*.{less,css}]
-indent_style = tab
-
-[Makefile,Vagrantfile]
+[*.{less,css,Makefile,Vagrantfile}]
 indent_style = tab
