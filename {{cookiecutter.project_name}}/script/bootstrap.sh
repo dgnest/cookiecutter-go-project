@@ -6,6 +6,7 @@ PYTHON_VERSION=2.7.9
 PYENV_NAME="${PROJECT_NAME}"
 
 GVM_NAME="${PROJECT_NAME}"
+GVM_PATHS_NAME="{src, pkg, bin}"
 
 # Vars Dir
 ROOT_DIR="`pwd`"
