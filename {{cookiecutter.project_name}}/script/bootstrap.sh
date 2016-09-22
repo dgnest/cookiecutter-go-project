@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # -*- coding: utf-8 -*-
 
-PROJECT_NAME='{{cookie_cutter.project_name}}'
+PROJECT_NAME='{{cookiecutter.project_name}}'
 PYTHON_VERSION=2.7.9
 PYENV_NAME="${PROJECT_NAME}"
 
