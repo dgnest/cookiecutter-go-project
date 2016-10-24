@@ -1,4 +1,4 @@
-# Go Project Cookiecutter
+# Cookiecutter Porject Go
 
 <span class="badges" align="center">
 [![Build Status](https://travis-ci.org/dgnest/cookiecutter-go-project.svg)](https://travis-ci.org/dgnest/cookiecutter-go-project)
