@@ -7,6 +7,8 @@ tmux_options: -2
 
 # Runs before everything. Use it to start daemons etc.
 # pre: sudo /etc/rc.d/mysqld start
+pre:
+    - make environment
 
 # Runs in each window and pane before window/pane specific commands. Useful for setting up interpreter versions.
 # pre_window: rbenv shell 2.0.0-p247
@@ -31,27 +33,45 @@ windows:
       layout: main-vertical
       panes:
         - editor:
-            - pyenv activate cookiecutter
+            - pyenv activate cookiecutter-go-project
+            - gvm pkgset use cookiecutter-go-project
             - <%= ENV["EDITOR"] %>
-        - vagrant:
-            - pyenv activate cookiecutter
+        - docker:
+            - pyenv activate cookiecutter-go-project
+            - gvm pkgset use cookiecutter-go-project
   - python:
       layout: main-vertical
       panes:
         - python:
-            - pyenv activate cookiecutter
+            - pyenv activate cookiecutter-go-project
+            - gvm pkgset use cookiecutter-go-project
             - ipython
   - databases:
       layout: main-vertical
       panes:
         - postgresql:
-            - pyenv activate cookiecutter
-        - mysql:
-            - pyenv activate cookiecutter
-  - vagrant:
+            - pyenv activate cookiecutter-go-project
+            - gvm pkgset use cookiecutter-go-project
+        - shell:
+            - pyenv activate cookiecutter-go-project
+            - gvm pkgset use cookiecutter-go-project
+  - docker:
       layout: main-vertical
       panes:
-        - code:
-            - pyenv activate cookiecutter
-        - vagrant:
-            - pyenv activate cookiecutter
+        - docker:
+            - pyenv activate cookiecutter-go-project
+            - gvm pkgset use cookiecutter-go-project
+        - shell:
+            - pyenv activate cookiecutter-go-project
+            - gvm pkgset use cookiecutter-go-project
+  - tools:
+      layout: main-vertical
+      panes:
+        - watch:
+            - pyenv activate cookiecutter-go-project
+            - gvm pkgset use cookiecutter-go-project
+            - make watch
+        - grip:
+            - pyenv activate cookiecutter-go-project
+            - gvm pkgset use cookiecutter-go-project
+            - make grip
