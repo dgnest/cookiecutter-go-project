@@ -5,4 +5,10 @@
 
 cd "${ROOT_DIR}"
 
-pyenv virtualenv "${PYTHON_VERSION}" "${PYENV_NAME}" > /dev/null
+# load source files externals
+if [ -e "$HOME/.pyenv" ]; then
+    eval "$(pyenv init -)"
+    eval "$(pyenv virtualenv-init -)"
+fi
+
+pyenv virtualenv "${PYTHON_VERSION}" "${PYENV_NAME}" >> /dev/null 2>&1
