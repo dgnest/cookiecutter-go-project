@@ -1,5 +1,5 @@
 -   repo: git@github.com:pre-commit/pre-commit-hooks
-    sha: c8a1c91c762b8e24fdc5a33455ec10662f523328
+    sha: 7539d8bd1a00a3c1bfd34cdb606d3a6372e83469
     hooks:
     -   id: detect-private-key
         files: ^(?!\.?git-crypt)
@@ -46,7 +46,7 @@
         args:
         - --ignore=migrations
 -   repo: git@github.com:pre-commit/pre-commit
-    sha: bbf1f62ed686a3e321280703a227fbd957e76151
+    sha: v0.9.3
     hooks:
     -   id: validate_config
     -   id: validate_manifest
