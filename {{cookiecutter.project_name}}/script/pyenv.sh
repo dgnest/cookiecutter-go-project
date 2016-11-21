@@ -3,12 +3,12 @@
 
 [ -r "script/bootstrap.sh" ] && source "script/bootstrap.sh"
 
-cd "${ROOT_DIR}"
-
 # load source files externals
 if [ -e "$HOME/.pyenv" ]; then
     eval "$(pyenv init -)"
     eval "$(pyenv virtualenv-init -)"
 fi
+
+cd "${ROOT_DIR}" || exit
 
 pyenv virtualenv "${PYTHON_VERSION}" "${PYENV_NAME}" >> /dev/null 2>&1
