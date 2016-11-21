@@ -10,22 +10,33 @@ SCRIPT_DIR = $(ROOT_DIR)/script
 WGET = wget
 
 # Bin scripts
+ANSIBLE_PROVISION = $(shell) $(SCRIPT_DIR)/provision.sh
+ANSIBLE_DEPLOY = $(shell) $(SCRIPT_DIR)/deploy.sh
 CLEAN = $(shell) $(SCRIPT_DIR)/clean.sh
 GVM = $(shell) $(SCRIPT_DIR)/gvm.sh
-PYENV = $(shell) $(SCRIPT_DIR)/pyenv.sh
-SETUP = $(shell) $(SCRIPT_DIR)/setup.sh
+GRIP = $(shell) $(SCRIPT_DIR)/grip.sh
 INSTALL = $(shell) $(SCRIPT_DIR)/install.sh
+PYENV = $(shell) $(SCRIPT_DIR)/pyenv.sh
 TEST = $(shell) $(SCRIPT_DIR)/test.sh
 RUNSERVER = $(shell) $(SCRIPT_DIR)/runserver.sh
 SYNC = $(shell) $(SCRIPT_DIR)/sync.sh
-LINGUIST = $(shell) $(SCRIPT_DIR)/linguist.sh
+WATCH = $(shell) $(SCRIPT_DIR)/watch.sh
 
-install:
-  $(INSTALL)
+ansible_provision:
+  $(ANSIBLE_PROVISION)
+
+
+ansible_deploy:
+  $(ANSIBLE_DEPLOY)
 
 
 clean:
   $(CLEAN)
+
+
+deploy:
+  $(ANSIBLE_PROVISION)
+  $(ANSIBLE_DEPLOY)
 
 
 distclean: clean
@@ -39,18 +50,30 @@ environment:
   $(GVM)
 
 
+grip:
+  $(GRIP)
+
+
+install:
+  $(INSTALL)
+
+
+roles:
+  $(ROLES_ANSIBLE)
+
+
 maintainer-clean: distclean
   rm -rf $(BIN_DIR)
   rm -rf $(ROOT_DIR)/lib/
 
 
-runserver:
-  $(RUNSERVER)
+test:
+  $(TEST)
 
 
 sync:
   $(SYNC)
 
 
-linguist:
-  $(LINGUIST)
+watch:
+  $(WATCH)
