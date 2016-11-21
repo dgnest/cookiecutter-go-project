@@ -9,6 +9,6 @@ if [ -e "$HOME/.pyenv" ]; then
     eval "$(pyenv virtualenv-init -)"
 fi
 
-cd "${ROOT_DIR}"
+cd "${ROOT_DIR}" || exit
 
 pyenv virtualenv "${PYTHON_VERSION}" "${PYENV_NAME}" >> /dev/null 2>&1
