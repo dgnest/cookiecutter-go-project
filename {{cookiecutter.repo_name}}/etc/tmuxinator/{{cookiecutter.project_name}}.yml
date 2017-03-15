@@ -33,36 +33,36 @@ windows:
       layout: even-horizontal
       panes:
         - editor:
-            - pyenv activate {{cookiecutter.project_name}}
-            - gvm pkgset use {{cookiecutter.project_name}}
+            - pyenv activate {{cookiecutter.repo_name}}
+            - gvm pkgset use {{cookiecutter.repo_name}}
             - <%= ENV["EDITOR"] %>
         - pwd:
-            - pyenv activate {{cookiecutter.project_name}}
-            - gvm pkgset use {{cookiecutter.project_name}}
+            - pyenv activate {{cookiecutter.repo_name}}
+            - gvm pkgset use {{cookiecutter.repo_name}}
         - pwd:
-            - pyenv activate {{cookiecutter.project_name}}
-            - gvm pkgset use {{cookiecutter.project_name}}
+            - pyenv activate {{cookiecutter.repo_name}}
+            - gvm pkgset use {{cookiecutter.repo_name}}
   - python:
       layout: main-vertical
       panes:
         - python:
-            - pyenv activate {{cookiecutter.project_name}}
-            - gvm pkgset use {{cookiecutter.project_name}}
+            - pyenv activate {{cookiecutter.repo_name}}
+            - gvm pkgset use {{cookiecutter.repo_name}}
   - databases:
       layout: main-vertical
       panes:
         - ls:
-            - pyenv activate {{cookiecutter.project_name}}
-            - gvm pkgset use {{cookiecutter.project_name}}
+            - pyenv activate {{cookiecutter.repo_name}}
+            - gvm pkgset use {{cookiecutter.repo_name}}
         - ls:
-            - pyenv activate {{cookiecutter.project_name}}
-            - gvm pkgset use {{cookiecutter.project_name}}
+            - pyenv activate {{cookiecutter.repo_name}}
+            - gvm pkgset use {{cookiecutter.repo_name}}
   - docker:
       layout: main-vertical
       panes:
         - ls:
-            - pyenv activate {{cookiecutter.project_name}}
-            - gvm pkgset use {{cookiecutter.project_name}}
+            - pyenv activate {{cookiecutter.repo_name}}
+            - gvm pkgset use {{cookiecutter.repo_name}}
         - ls:
-            - pyenv activate {{cookiecutter.project_name}}
-            - gvm pkgset use {{cookiecutter.project_name}}
+            - pyenv activate {{cookiecutter.repo_name}}
+            - gvm pkgset use {{cookiecutter.repo_name}}
