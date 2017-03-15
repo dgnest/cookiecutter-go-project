@@ -1,4 +1,4 @@
-# Makefile for {{cookiecutter.project_name}}.
+# Makefile for {{cookiecutter.repo_name}}.
 
 # Configuration.
 SHELL = /bin/bash

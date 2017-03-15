@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # -*- coding: utf-8 -*-
 
-export PROJECT_NAME='{{cookiecutter.project_name}}'
+export PROJECT_NAME='{{cookiecutter.repo_name}}'
 export PYTHON_VERSION=2.7.9
 export PYENV_NAME="${PROJECT_NAME}"
 
