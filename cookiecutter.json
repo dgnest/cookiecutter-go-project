@@ -4,11 +4,11 @@
   "github_user": "dgnest",
   "github_author": "https://github.com/luismayta",
   "company": "dgnest",
-	"project_name": "project-name",
+	"project_name": "name of project",
 	"repo_name": "go-project-name",
 	"short_description": "Go Project name",
-	"release_date": "2016-08-19",
-	"year": "2016",
+	"release_date": "2017-03-17",
+	"year": "2017",
 	"version": "0.0.0",
   "license": "Mit"
 }
