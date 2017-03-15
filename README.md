@@ -1,10 +1,8 @@
 # Cookiecutter Porject Go
 
-<span class="badges" align="center">
 [![Build Status](https://travis-ci.org/dgnest/cookiecutter-go-project.svg)](https://travis-ci.org/dgnest/cookiecutter-go-project)
 [![GitHub issues](https://img.shields.io/github/issues/dgnest/cookiecutter-go-project.svg)](https://github.com/dgnest/cookiecutter-go-project/issues)
 [![GitHub license](https://img.shields.io/github/license/mashape/apistatus.svg?style=flat-square)](LICENSE)
-</span>
 
 Cookiecutter recipe to easily create golang project.
 
