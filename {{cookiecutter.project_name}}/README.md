@@ -2,7 +2,6 @@
 
 {{cookiecutter.short_description}}
 
-<span class="badges">
 [![Code Climate](https://codeclimate.com/github/{{cookiecutter.github_user}}/{{cookiecutter.repo_name}}/badges/gpa.svg)](https://codeclimate.com/github/{{cookiecutter.github_user}}/{{cookiecutter.repo_name}})
 [![GitHub issues](https://img.shields.io/github/issues/{{cookiecutter.github_user}}/{{cookiecutter.repo_name}}.svg)](https://github.com/{{cookiecutter.github_user}}/{{cookiecutter.repo_name}}/issues)
 [![GitHub forks](https://img.shields.io/github/forks/{{cookiecutter.github_user}}/{{cookiecutter.repo_name}}.svg)](https://github.com/{{cookiecutter.github_user}}/{{cookiecutter.repo_name}})
@@ -10,7 +9,6 @@
 [![Issue Count](https://codeclimate.com/github/{{cookiecutter.github_user}}/{{cookiecutter.repo_name}}/badges/issue_count.svg)](https://codeclimate.com/github/{{cookiecutter.github_user}}/{{cookiecutter.repo_name}})
 [![license](https://img.shields.io/github/license/mashape/apistatus.svg?style=flat-square)](LICENSE)
 [![Test Coverage](https://codeclimate.com/github/{{cookiecutter.github_user}}/{{cookiecutter.repo_name}}/badges/coverage.svg)](https://codeclimate.com/github/{{cookiecutter.github_user}}/{{cookiecutter.repo_name}}/coverage)
-</span>
 
 ## Requirements
 
